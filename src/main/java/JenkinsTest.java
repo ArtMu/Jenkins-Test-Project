@@ -1,6 +1,7 @@
 /**
  * Created by amujunen on 5/10/17.
  */
+
 public class JenkinsTest {
     public static void main(String[] args){
         System.out.print("### Main");

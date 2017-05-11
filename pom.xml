@@ -7,6 +7,13 @@
     <groupId>artsi-jenkins-test</groupId>
     <artifactId>jenkinsTest</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.java.version>1.8</project.java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -14,11 +21,17 @@
             <version>4.8.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <!--dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency-->
+        <!--dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
-        </dependency>
+        </dependency-->
     </dependencies>
 
     <build>

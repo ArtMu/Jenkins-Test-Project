@@ -1,18 +1,23 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.logging.Logger;
+
 /**
  * Created by amujunen on 5/10/17.
  */
 public class JenkinsTestTest {
+    static Logger logger = Logger.getLogger("JenkinsTestTest");
     @Test
     public void subtract() throws Exception {
-        System.out.print("Subtract");
+        int result = JenkinsTest.subtract(10, 2);
+        Assert.assertEquals("### Wrong Subtract result: ", 5, result);    // False failure
+        logger.info("#### Subtract");
     }
 
     @Test
     public void multiply() throws Exception {
-        System.out.print("Multiply");
+        logger.info("#### Multiply");
     }
 
 }
