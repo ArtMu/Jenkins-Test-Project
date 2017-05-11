@@ -14,7 +14,7 @@ public class JenkinsTest {
         return x / subtractor;
     }
 
-    protected static int multiply(int x, int amount){
-        return x / amount;
+    protected static int multiply(int x, int times){
+        return x * times;
     }
 }
